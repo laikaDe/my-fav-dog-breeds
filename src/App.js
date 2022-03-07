@@ -1,4 +1,6 @@
 import DogBreed from './components/DogBreed';
+import Loading from './components/Loading';
+
 
 
 function App() {
