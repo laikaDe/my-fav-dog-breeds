@@ -17,7 +17,7 @@ import SearchForm from './components/SearchForm';
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       <Switch>
         <Route exact path="/">
           <Home/>
