@@ -2,22 +2,24 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 //import pages 
-import Home from './pages/Home';
-import About from './pages/About';
-import SingleDogBreed from './pages/SingleDogBreed';
-import Error from './pages/Error';
+import Home from './components/layout/Home';
+import About from './components/layout/About';
+import SingleDogBreed from './components/layout/SingleDogBreed';
+import Error from './components/layout/Error';
 //import components 
 import DogBreed from './components/DogBreed';
 import DogBreedList from './components/DogBreedList';
-import Loading from './components/Loading';
-import Navbar from './components/Navbar';
-import SearchForm from './components/SearchForm';
+import Loading from './components/layout/Loading';
+import Navbar from './components/layout/Navbar';
+// import SearchForm from './components/home/SearchForm';
+import Landing from './components/home/Landing';
 
 
 function App() {
   return (
     <Router>
       <Navbar/>
+      <Landing/>
       <Switch>
         <Route exact path="/">
           <Home/>

@@ -1,6 +1,6 @@
 import React from 'react'
-import DogBreedList from '../components/DogBreedList';
-import SearchForm from '../components/SearchForm';
+import DogBreedList from '../DogBreedList';
+import SearchForm from '../home/SearchForm';
 
 export default function Home() {
   return (
