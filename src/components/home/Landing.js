@@ -6,7 +6,7 @@ export default class Landing extends Component {
     return (
       <div className='container'>
           <h1>Landing</h1>
-          {/* < SearchForm /> */}
+          < SearchForm />
       </div>
     )
   }

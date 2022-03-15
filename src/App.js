@@ -13,10 +13,15 @@ import Loading from './components/layout/Loading';
 import Navbar from './components/layout/Navbar';
 // import SearchForm from './components/home/SearchForm';
 import Landing from './components/home/Landing';
+// import Store
+import store from './store';
+import { Provider } from 'react-redux';
+
 
 
 function App() {
   return (
+    <Provider store={store}>
     <Router>
       <Navbar/>
       <Landing/>
@@ -35,6 +40,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    </Provider>
   );
 }
 

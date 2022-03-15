@@ -5,7 +5,6 @@ import SearchForm from '../home/SearchForm';
 export default function Home() {
   return (
     <main>
-      <SearchForm/>
       <DogBreedList/>
     </main>
   )
