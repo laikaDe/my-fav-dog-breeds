@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { searchDogBreed } from '../../actions/searchActions';
+import { searchDogBreed, fetchDogBreeds } from '../../actions/searchActions';
 
 export class SearchForm extends Component {
 
@@ -8,16 +8,19 @@ export class SearchForm extends Component {
     //take value of input and sets the value and use it inside searchdogbreed action
     //triggers dispatch
     this.props.searchDogBreed(event.target.value);
-
-
-
   }
+  
+  onSubmit = e => {
+    e.preventDefault();
+    this.props.fetchDogBreeds(this.props.text)
+  }
+
   render() {
     return (
       <section className='section search'>
-        <form action='' className='search-form'>
+        <form action='' className='search-form' onSubmit={this.onSubmit}>
           <div className='form-control'>
-            <label htmlFor='name'> search your favorite dogbreeds!</label>
+            <label htmlFor='name'> Search for your favorite dogbreeds!</label>
             <input 
             type='text' 
             onChange={this.onChange}
@@ -39,4 +42,4 @@ const mapStateToProps = state => ({
 
 
 
-export default connect(mapStateToProps, {searchDogBreed})(SearchForm);
+export default connect(mapStateToProps, {searchDogBreed, fetchDogBreeds})(SearchForm);

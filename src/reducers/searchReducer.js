@@ -1,10 +1,15 @@
-import { SEARCH_DOGBREED } from '../actions/types';
+import { SEARCH_DOGBREED, FETCH_DOGBREEDS, FETCH_DOGBREED } from '../actions/types';
 
 const initialState = {
     text: '',
     dogbreeds: [],
     loading: false,
-    dogbreed: []
+    dogbreed: {
+        weight: {
+            imperial: 0,
+            metric: 0
+        }
+    }
 };
 
 export default function(state = initialState, action) {
@@ -14,8 +19,18 @@ export default function(state = initialState, action) {
                 ...state,
                 text: action.payload,
                 loading: false
-            }
+            };
+        case FETCH_DOGBREEDS:
+            return{
+                ...state,
+                dogbreeds: action.payload,
+            };
+        case FETCH_DOGBREED:
+            return{
+                ...state,
+                dogbreed: action.payload,
+            };
         default:
             return state
-    }
+    };
 }
