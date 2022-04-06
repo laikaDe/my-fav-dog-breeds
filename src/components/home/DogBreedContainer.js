@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import DogBreedCard from './DogBreedCard';
-//check movie state value
+//check dogbreed state value
 //if empty display nothing 
 //if full map through dogbreeds to create 
-//a new dogbreed opbject and render that data
-//through component 
+//a new dogbreed object and render that data
+//through presentational component 
 
 export class DogBreedContainer extends Component {
   render() {

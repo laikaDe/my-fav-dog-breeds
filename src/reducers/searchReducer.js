@@ -8,6 +8,10 @@ const initialState = {
         weight: {
             imperial: 0,
             metric: 0
+        },
+        height: {
+            imperial: 0,
+            metric: 0
         }
     }
 };
