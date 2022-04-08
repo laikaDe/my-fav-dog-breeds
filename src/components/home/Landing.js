@@ -3,7 +3,6 @@ import SearchForm from './SearchForm';
 import { connect } from 'react-redux';
 import DogBreedContainer from './DogBreedContainer';
 import Loading from '../layout/Loading';
-// import Spinner from '../layout/Spinner';
 
 export class Landing extends Component {
   render() {
@@ -11,11 +10,7 @@ export class Landing extends Component {
     return (
       <div className='container'>
           < SearchForm />
-          {/*check dogbreed state if empty then display spinner 
-          if full then display the dogbreed state container which 
-          should render the dogbreed info and img*/}
-          {loading ? <Loading/> : <DogBreedContainer/>}
-          
+          {loading ? <Loading/> : <DogBreedContainer/>}         
       </div>
     )
   }

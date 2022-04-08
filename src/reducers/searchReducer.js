@@ -1,5 +1,7 @@
 import { SEARCH_DOGBREED, FETCH_DOGBREEDS, FETCH_DOGBREED } from '../actions/types';
 
+//reducers always need an initial state
+//added weight and height objects since the api call returns nested weight and height objects
 const initialState = {
     text: '',
     dogbreeds: [],
@@ -16,8 +18,9 @@ const initialState = {
     }
 };
 
-export default function(state = initialState, action) {
+export default function searchReducer(state = initialState, action) {
     switch(action.type) {
+        //switch does something based on action.type
         case SEARCH_DOGBREED:
             return{
                 ...state,
@@ -36,5 +39,6 @@ export default function(state = initialState, action) {
             };
         default:
             return state
+        //returns default state if it doesn't have to perform any actions
     };
 }

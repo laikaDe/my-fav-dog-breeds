@@ -14,7 +14,7 @@ export class DogBreedContainer extends Component {
       let content = '';
       //if array length is bigger than 0 the content will be equal to dogbreeds.map
       content = dogbreeds.length > 0 ? dogbreeds.map((dogbreed, index)=> <DogBreedCard key={index} dogbreed={dogbreed}/>) : null ;
-    return (
+      return (
       <div className="row">
         {content}
       </div>

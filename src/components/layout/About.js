@@ -5,7 +5,7 @@ export default function About() {
       <section className="section about-section">
       <h1 className="section-title">About My Favorite Dog Breeds</h1>
       <p>
-         Search for information on your favorite dog breeds!
+         Search for information about your favorite dog breeds!
       </p>
       </section>
   )

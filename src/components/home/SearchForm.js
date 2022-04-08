@@ -27,9 +27,7 @@ export class SearchForm extends Component {
             id='name' 
             />
           </div>
-        </form>
-        
-        
+        </form>     
       </section>
     
   )
