@@ -20,7 +20,7 @@ export class SearchForm extends Component {
       <section className='section search'>
         <form action='' className='search-form' onSubmit={this.onSubmit}>
           <div className='form-control'>
-            <label htmlFor='name'> Search for your favorite dogbreeds!</label>
+            <label htmlFor='name'> Search for your favorite dog breeds!</label>
             <input 
             type='text' 
             onChange={this.onChange}

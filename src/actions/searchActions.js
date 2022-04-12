@@ -1,8 +1,4 @@
-import { 
-    SEARCH_DOGBREED,
-    FETCH_DOGBREEDS,
-    FETCH_DOGBREED
- } from './types';
+import { SEARCH_DOGBREED, FETCH_DOGBREEDS, FETCH_DOGBREED } from './types';
 import axios from 'axios';
 import {API_KEY} from '../APIKEY';
 

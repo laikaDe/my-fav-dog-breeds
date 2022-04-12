@@ -6,7 +6,7 @@ export default function Error() {
   return (
     <section className="error-page-section">
     <div className="error-container">
-       <h1>Whoopsie daisy! We don't know what that means!</h1>  
+       <h1>Whoopsie daisy! Not sure what that means!</h1>  
        <Link to="/" className="btn btn-primary">
           back home
        </Link>
