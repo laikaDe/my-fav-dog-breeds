@@ -11,11 +11,7 @@ export const searchDogBreed = text => dispatch => {
 
 export const fetchDogBreeds = text => dispatch => {
     const url = `https://api.thedogapi.com/v1/breeds/search?q=${text}`
-    axios.get(url, {
-        headers: {
-            'x-api-key': {API_KEY},
-        }      
-    })
+    axios.get(url, {params: {text}})
     .then(response => dispatch
         ({
         type: FETCH_DOGBREEDS,
