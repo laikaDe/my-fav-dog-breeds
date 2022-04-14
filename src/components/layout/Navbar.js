@@ -7,22 +7,23 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="nav-center">
             <h2> My Favorite Dog Breeds </h2>
-               <Link to="/">
-                  {/* <img src={logo} alt="my fav dog breeds logo" className="logo"> */}
-               </Link>  
                <ul className="nav-links">
-<li>
-<Link to="/">
-   Home
-</Link>
-</li>
-<li>
-<Link to="/about">
-   About
-</Link>
-</li>  
-                  
-               </ul>
+                  <li>
+                     <Link to="/">
+                        Home
+                     </Link>
+                  </li>
+                  <li>
+                     <Link to="/about">
+                        About
+                     </Link>
+                  </li>  
+                  <li>
+                     <Link to="/create">
+                        Create
+                     </Link>
+                  </li> 
+                  </ul>
             </div>
         </nav>
     )

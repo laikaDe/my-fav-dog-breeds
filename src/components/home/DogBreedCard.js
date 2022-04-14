@@ -8,7 +8,7 @@ export class DogBreedCard extends Component {
     return (
       <div className="col-md-3 mb-5">
         <div className="card card-body bg-dark text-center h-100">
-          <img className="w-100 mb-2" src={`https://cdn2.thedogapi.com/images/${dogbreed.reference_image_id}.jpg`} alt="Dog Breed Display" />
+          <img className="w-100 mb-2" src={dogbreed.image_url} alt="Dog Breed Display" />
           <h5 className="text-light card-title">
             {dogbreed.name}
           </h5>

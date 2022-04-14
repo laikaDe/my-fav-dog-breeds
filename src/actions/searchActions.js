@@ -26,7 +26,7 @@ export const fetchDogBreeds = text => dispatch => {
 };
 
 export const fetchDogBreed = id => dispatch => {
-    const url = `https://api.thedogapi.com/v1/breeds/${id}`
+    const url = `http://localhost:3000/dogbreeds/${id}`
     axios.get(url, {
         headers: {
             'x-api-key': {API_KEY},
