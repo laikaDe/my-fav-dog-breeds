@@ -21,7 +21,6 @@ class DogForm extends Component {
         }
     };
 
-
     async componentDidMount() {
         const { data: dogbreeds } = await axios.get(apiEndPoint);
         this.setState({ dogbreeds });
