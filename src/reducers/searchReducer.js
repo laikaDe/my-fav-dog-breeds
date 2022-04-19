@@ -6,16 +6,7 @@ const initialState = {
     text: '',
     dogbreeds: [],
     loading: false,
-    dogbreed: {
-        weight: {
-            imperial: 0,
-            metric: 0
-        },
-        height: {
-            imperial: 0,
-            metric: 0
-        }
-    }
+    dogbreed: {}     
 };
 
 export default function searchReducer(state = initialState, action) {
