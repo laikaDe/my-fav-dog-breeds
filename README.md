@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Getting Started with My Favorite Dog Breeds React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The frontend was built with react. It allows users to search for a dog breed by their name and then renders these dogbreeds in a grid or individually for more information. Users can also add their own custom dog to the database via a form. 
 
 ## Available Scripts
 
