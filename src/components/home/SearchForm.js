@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { searchDogBreed, fetchDogBreeds } from '../../actions/searchActions';
+import { searchDogBreed, fetchDogBreeds } from '../../actions/dogActions';
 
 export class SearchForm extends Component {
+  
 
-  onChange = event => {
-    //take value of input and sets the value and use it inside searchdogbreed action
-    //triggers dispatch
-    this.props.searchDogBreed(event.target.value);
+  onChange = e => {
+    this.props.searchDogBreed(e.target.value);
   }
   
   onSubmit = e => {

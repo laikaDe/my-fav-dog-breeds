@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-export class DogBreedCard extends Component {
-  render() {
-    const { dogbreed } = this.props;
+const DogBreedCard = (props) => {
+
     return (
       <div className="col-md-3 mb-5">
         <div className="card card-body bg-dark text-center h-100">
-          <img className="w-100 mb-2" src={dogbreed.image_url} alt="Dog Breed Display" />
+          <img className="w-100 mb-2" src={props.dogbreed.image_url} alt="Dog Breed Display" />
           <h5 className="text-light card-title">
-            {dogbreed.name}
+            {props.dogbreed.name}
           </h5>
-          <Link className="btn btn-primary" to={'/dogbreed/' + dogbreed.id}>
+          <Link className="btn btn-primary" to={'/dogbreed/' + props.dogbreed.id}>
             Dog Breed Details
             <i className="fas fa-chevron-right" />
           </Link>
@@ -20,6 +19,5 @@ export class DogBreedCard extends Component {
       </div>
     );
   }
-}
 
 export default DogBreedCard;

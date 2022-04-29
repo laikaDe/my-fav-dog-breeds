@@ -1,6 +1,5 @@
-import { SEARCH_DOGBREED, FETCH_DOGBREEDS, FETCH_DOGBREED } from './types';
+import { SEARCH_DOGBREED, FETCH_DOGBREEDS, FETCH_DOGBREED, ADD_DOG} from './types';
 import axios from 'axios';
-import {API_KEY} from '../APIKEY';
 
 export const searchDogBreed = text => dispatch => {
     dispatch({
@@ -23,18 +22,7 @@ export const fetchDogBreeds = text => dispatch => {
 
 export const fetchDogBreed = id => dispatch => {
     const url = `http://localhost:3000/dogbreeds/${id}`
-    //asynchronous operation 
-    //1. call api 
-    //2. returns promise
-    //3. if promise is resolved dispatches success actions
-    // and the dogbreed/1 is placed in the payload
-    // the reducer will catch it and return the updated state
-    // if dispatch is rejected an error action is returned 
-    axios.get(url, {
-        headers: {
-            'x-api-key': {API_KEY},
-        }      
-    })
+    axios.get(url)
     .then(response => dispatch
         ({
         type: FETCH_DOGBREED,
@@ -42,3 +30,20 @@ export const fetchDogBreed = id => dispatch => {
     }))
     .catch(error => console.log(error));
 }
+
+export const addDog = dogObj => dispatch => {
+    console.log('before fetch')
+    const url = "http://localhost:3000/dogbreeds"
+    axios.post(url, dogObj)
+    .then(response => {dispatch
+        ({
+        type: ADD_DOG,
+        payload: response.data
+    })
+    console.log('after fetch')
+    }
+    )
+    
+    .catch(error => console.log(error));   
+};
+

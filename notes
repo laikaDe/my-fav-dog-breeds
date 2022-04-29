@@ -1,0 +1,7 @@
+    //asynchronous operation 
+    //1. call api 
+    //2. returns promise
+    //3. if promise is resolved dispatches success actions
+    // and the dogbreed/{id} is placed in the payload
+    // the reducer will catch it and return the updated state
+    // if dispatch is rejected an error action is returned 
