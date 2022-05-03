@@ -7,7 +7,6 @@ const initialState = {
     dogbreeds: [],
     loading: false,
     dogbreed: {
-        name: ''
     }     
 };
 

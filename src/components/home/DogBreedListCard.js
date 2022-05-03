@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const DogBreedCard = (props) => {
+const DogBreedListCard = (props) => {
 
     return (
       <div className="col-md-3 mb-5">
@@ -20,4 +20,4 @@ const DogBreedCard = (props) => {
     );
   }
 
-export default DogBreedCard;
+export default DogBreedListCard;

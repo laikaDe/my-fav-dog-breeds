@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import SearchForm from './SearchForm';
 import { connect } from 'react-redux';
-import DogBreedContainer from './DogBreedContainer';
+import DogBreedContainer from './DogBreedListContainer';
 import Loading from '../layout/Loading';
 
 export class Landing extends Component {

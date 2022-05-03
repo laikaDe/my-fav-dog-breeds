@@ -9,7 +9,7 @@ import Navbar from './components/layout/Navbar';
 // import home
 import AddDog from './components/home/AddDog';
 import Landing from './components/home/Landing';
-import DogBreed from './components/home/DogBreed';
+import SingleDogBreedContainer from './components/home/SingleDogBreedContainer';
 // import store
 import store from './store';
 import { Provider } from 'react-redux';
@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/create" component={AddDog}/>
-        <Route path="/dogbreed/:id" component={DogBreed}/>
+        <Route path="/dogbreed/:id" component={SingleDogBreedContainer}/>
         <Route exact path="*" component={Error}/>
       </Switch>
     </Router>
